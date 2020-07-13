@@ -18,6 +18,6 @@ jobs:
     - name: Build and Publish head Docker image
       uses: VaultVulp/gp-docker-action@1.1.6
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
+        github-token: ${{ secrets.GH_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
         image-name: ml-env # Provide Docker image name
         image-tag: head # Provide Docker image tag
